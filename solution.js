@@ -20,6 +20,10 @@ const solutionObserver = new IntersectionObserver(entries => {
   });
 }, { threshold: .15 });
 document.querySelectorAll('.reveal').forEach(block => solutionObserver.observe(block));
+document.querySelectorAll('.project-card').forEach((card, index) => {
+  card.style.setProperty('--project-delay', `${index % 2 * 120}ms`);
+  solutionObserver.observe(card);
+});
 document.querySelectorAll('.ilu-example-card').forEach((card, index) => {
   card.style.setProperty('--example-delay', `${index * 120}ms`);
   solutionObserver.observe(card);
