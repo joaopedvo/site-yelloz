@@ -121,3 +121,13 @@ a.method-more{display:block;text-align:center;text-decoration:none}
 .projects-page{background:#e9e5c6;color:var(--olive)}.projects-intro{text-align:center;padding:390px 24px 140px}.projects-intro h1{font-size:96px;line-height:1;letter-spacing:-7px}.projects-intro p{font-size:20px;line-height:1;letter-spacing:-.8px;margin:35px 0 0}.projects-intro .dot{margin-top:125px}.projects-grid{width:88%;max-width:920px;margin:auto;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 54px}.project-card{margin:0;border-radius:16px;overflow:hidden;opacity:0;transform:translateY(30px);transition:opacity .8s,transform .9s cubic-bezier(.22,1,.36,1);transition-delay:var(--project-delay,0ms)}.project-card.visible{opacity:1;transform:none}.project-card img{display:block;width:100%;height:auto}.projects-divider{margin:110px auto 0}.projects-page .contact-section{padding-top:110px}.projects-page .site-footer{background:var(--olive)}
 @media(max-width:700px){.projects-intro{padding:200px 24px 65px}.projects-intro h1{font-size:64px;letter-spacing:-4px}.projects-intro p{font-size:18px;line-height:1.15}.projects-intro .dot{margin-top:65px}.projects-grid{width:84%;grid-template-columns:1fr;gap:30px;max-width:440px}.projects-divider{margin-top:65px}}
 @media(prefers-reduced-motion:reduce){.project-card{opacity:1;transform:none;transition:none}}
+/* Alinhamento consistente da página de Cases. */
+.projects-page{--projects-width:920px}
+.projects-page .projects-grid,.projects-page .contact-inner{width:100%;max-width:var(--projects-width);margin-left:auto;margin-right:auto}
+.projects-page .projects-grid{width:88%;align-items:start}
+.projects-page .project-card{position:relative;top:auto;min-width:0}
+.projects-page .contact-section{padding-left:6%;padding-right:6%}
+.projects-page .contact-section h2{font-size:clamp(36px,4.5vw,60px);line-height:.95;letter-spacing:-.065em}
+.projects-page .contact-layout{grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:40px}
+.projects-page .projects-intro{padding-top:clamp(220px,27vw,390px);padding-bottom:140px}
+@media(max-width:700px){.projects-page .projects-grid{width:84%}.projects-page .contact-section{padding-left:8%;padding-right:8%}.projects-page .contact-layout{grid-template-columns:1fr;gap:28px}.projects-page .projects-intro{padding-top:190px;padding-bottom:65px}.projects-page .contact-section h2{font-size:clamp(32px,7.6vw,45px);line-height:1.05}}
