@@ -169,3 +169,10 @@ a.method-more{display:block;text-align:center;text-decoration:none}
 .diagnostic-page .diagnostic-cta:hover{filter:brightness(1.05)}
 .diagnostic-page .diagnostic-cta:focus-visible{outline:2px solid currentColor;outline-offset:5px}
 @media(max-width:700px){.diagnostic-page .post-main{width:calc(100% - 40px);padding-top:135px;padding-bottom:55px}.diagnostic-page .post-heading h1{font-size:clamp(38px,10vw,54px);line-height:1.05}.diagnostic-page .diagnostic-section{padding:34px 0}.diagnostic-page .post-content h2{font-size:30px}.diagnostic-page .diagnostic-cta{padding:18px;gap:12px}.diagnostic-page .diagnostic-cta strong{font-size:18px}}
+
+/* Original header and footer logos, preserving SVG proportions. */
+.navigation .brand{display:inline-flex;align-items:center;flex-shrink:0}
+.navigation .brand img{display:block;width:70px;height:auto}
+.footer-brand>a{display:inline-flex}
+.footer-brand>a img{display:block;width:190px;max-width:100%;height:auto}
+@media(max-width:700px){.footer-brand>a img{width:170px}}
